@@ -31,6 +31,14 @@ $accent-maroon: #b23368ff;
     transition: all 0.2s ease-in-out;
 }
 
+@mixin flex-center($direction, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Media Queries
 --------------------------------------------------------------------*/
 
