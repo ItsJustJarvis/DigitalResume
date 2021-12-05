@@ -20,3 +20,30 @@ $blue: #445393ff;
 $turqoise: #76e7cdff;
 $magenta: #75256aff;
 $maroon: #b23368ff;
+
+/* 3. Functions
+--------------------------------------------------------------------*/
+
+/* 4. Mixins
+--------------------------------------------------------------------*/
+
+/* 5. Media Queries
+--------------------------------------------------------------------*/
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
