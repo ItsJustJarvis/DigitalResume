@@ -179,6 +179,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 83, 147, 0.6)), color-stop(#160610), to(rgba(68, 83, 147, 0.4))), url("../img/retrotech.jpg") fixed center;
   background: linear-gradient(0deg, rgba(68, 83, 147, 0.6), #160610, rgba(68, 83, 147, 0.4)), url("../img/retrotech.jpg") fixed center;
   background-size: cover;
@@ -278,12 +279,11 @@ main .social-icons a:hover {
 
 footer {
   font-size: 1rem;
-  font-weight: 700;
   position: fixed;
   bottom: 0.4rem;
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #160610ff;
+  color: #76e7cdff;
 }
 /*# sourceMappingURL=main.css.map */
