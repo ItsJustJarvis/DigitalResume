@@ -151,6 +151,28 @@
   color: #b23368ff;
 }
 
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #160610ff;
+  background-size: cover;
+}
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #76e7cdff;
+}
+.home__name--last {
+  color: #76e7cdff;
+  font-weight: 700;
+}
+
 /* Base Styles
 --------------------------------------------------------------------*/
 body {
@@ -168,7 +190,7 @@ h3 {
 }
 
 a {
-  color: #445393ff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -198,7 +220,7 @@ main .social-icons a {
   transition: all 0.2s ease-in-out;
 }
 main .social-icons a:hover {
-  color: #75256aff;
+  color: #b23368ff;
 }
 
 footer {

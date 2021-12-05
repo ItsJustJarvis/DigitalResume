@@ -20,7 +20,7 @@ h3 {
 }
 
 a {
-    color: $primary-light;
+    color: $text-light;
     text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ main {
             @include transition-ease;
 
             &:hover {
-                color: $secondary-color;
+                color: $accent-maroon;
             }
         }
     }
