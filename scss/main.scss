@@ -1,4 +1,8 @@
 @use "config" as *;
+@use "menu";
+
+/* Base Styles
+--------------------------------------------------------------------*/
 
 body {
     background: $primary-dark;

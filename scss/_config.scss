@@ -1,4 +1,4 @@
-/* 1. Basic style resets
+/* Style resets
 --------------------------------------------------------------------*/
 
 * {
@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-/* 2. Theme Styles
+/* Theme Styles
 --------------------------------------------------------------------*/
 
 // Text
@@ -21,17 +21,17 @@ $secondary-color: #75256aff;
 $accent-turqoise: #76e7cdff;
 $accent-maroon: #b23368ff;
 
-/* 3. Functions
+/* Functions
 --------------------------------------------------------------------*/
 
-/* 4. Mixins
+/* Mixins
 --------------------------------------------------------------------*/
 
 @mixin transition-ease {
     transition: all 0.2s ease-in-out;
 }
 
-/* 5. Media Queries
+/* Media Queries
 --------------------------------------------------------------------*/
 
 @mixin media-md {
@@ -51,3 +51,4 @@ $accent-maroon: #b23368ff;
         @content;
     }
 }
+
