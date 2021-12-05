@@ -54,3 +54,57 @@
         }
     }
 }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+
+    &.open {
+        visibility: visible;
+    }
+
+    .menu-nav {
+        @include flex-center("column", "wrap");
+        height: 100vh;
+        overflow: hidden;
+        background: $primary-dark;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-100%);
+        @include transition-ease;
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        &__item {
+            @include flex-center("column", "wrap");
+        }
+
+        &__link {
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            transform: translateX(110vw);
+            @include transition-ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            &.active {
+                color: $accent-turqoise;
+            }
+
+            &:hover {
+                color: $accent-maroon;
+            }
+        }
+    }
+}
