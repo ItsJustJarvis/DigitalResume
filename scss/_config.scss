@@ -49,12 +49,11 @@ $accent-maroon: #b23368ff;
 
 @mixin item-card {
     background: rgba($primary-light, 0.3);
-    border-bottom: 5px solid;
-    border-image: linear-gradient(to right, $primary-light, $accent-maroon) 2;
+    @include gradient-bottom;
 }
 
 @mixin gradient-bottom {
-    border-bottom: 5px solid;
+    border-bottom: 2px solid;
     border-image: linear-gradient(to right, $accent-maroon, $primary-light) 2;
 }
 

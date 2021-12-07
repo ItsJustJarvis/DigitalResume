@@ -240,22 +240,17 @@
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.about .jobs__headline {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-}
 .about .jobs__item {
   background: rgba(68, 83, 147, 0.3);
-  border-bottom: 5px solid;
-  -o-border-image: linear-gradient(to right, #445393ff, #b23368ff) 2;
-     border-image: -webkit-gradient(linear, left top, right top, from(#445393ff), to(#b23368ff)) 2;
-     border-image: linear-gradient(to right, #445393ff, #b23368ff) 2;
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
+     border-image: -webkit-gradient(linear, left top, right top, from(#b23368ff), to(#445393ff)) 2;
+     border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
 }
 .about .jobs__item__period {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 1rem 1rem 0.5rem;
-  border-bottom: 5px solid;
+  border-bottom: 2px solid;
   -o-border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
      border-image: -webkit-gradient(linear, left top, right top, from(#b23368ff), to(#445393ff)) 2;
      border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
@@ -274,17 +269,12 @@
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.about .education__headline {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-}
 .about .education__item {
   background: rgba(68, 83, 147, 0.3);
-  border-bottom: 5px solid;
-  -o-border-image: linear-gradient(to right, #445393ff, #b23368ff) 2;
-     border-image: -webkit-gradient(linear, left top, right top, from(#445393ff), to(#b23368ff)) 2;
-     border-image: linear-gradient(to right, #445393ff, #b23368ff) 2;
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
+     border-image: -webkit-gradient(linear, left top, right top, from(#b23368ff), to(#445393ff)) 2;
+     border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
 }
 .about .education__item__toggle {
   background-color: rgba(0, 0, 0, 0.9);
@@ -295,7 +285,7 @@
   text-align: left;
   font-family: "Lobster Two", cursive;
   font-size: 1.5rem;
-  border-bottom: 5px solid;
+  border-bottom: 2px solid;
   -o-border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
      border-image: -webkit-gradient(linear, left top, right top, from(#b23368ff), to(#445393ff)) 2;
      border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
