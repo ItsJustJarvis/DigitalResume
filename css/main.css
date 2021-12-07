@@ -392,6 +392,28 @@
 .projects__item:hover .projects__btn {
   opacity: 1;
 }
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.projects__btn {
+  opacity: 0;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.projects__btn:hover {
+  color: #75256aff;
+}
 .projects .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,6 +469,11 @@
   }
   .projects .text-secondary {
     font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 body {
