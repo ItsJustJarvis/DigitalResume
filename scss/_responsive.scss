@@ -27,6 +27,18 @@
             }
         }
     }
+
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
 }
 
 @include media-lg {
