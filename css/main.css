@@ -240,8 +240,13 @@
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
+.about .jobs__headline {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
 .about .jobs__item {
-  background: rgba(68, 83, 147, 0.5);
+  background: rgba(68, 83, 147, 0.3);
   border-bottom: 5px solid;
   -o-border-image: linear-gradient(to right, #445393ff, #b23368ff) 2;
      border-image: -webkit-gradient(linear, left top, right top, from(#445393ff), to(#b23368ff)) 2;
@@ -269,8 +274,13 @@
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
+.about .education__headline {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
 .about .education__item {
-  background: rgba(68, 83, 147, 0.5);
+  background: rgba(68, 83, 147, 0.3);
   border-bottom: 5px solid;
   -o-border-image: linear-gradient(to right, #445393ff, #b23368ff) 2;
      border-image: -webkit-gradient(linear, left top, right top, from(#445393ff), to(#b23368ff)) 2;
@@ -283,7 +293,8 @@
   width: 100%;
   border: none;
   text-align: left;
-  font-size: 2rem;
+  font-family: "Lobster Two", cursive;
+  font-size: 1.5rem;
   border-bottom: 5px solid;
   -o-border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
      border-image: -webkit-gradient(linear, left top, right top, from(#b23368ff), to(#445393ff)) 2;
@@ -359,11 +370,15 @@ body {
   color: #fff;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 h1,
-h2,
+h2 {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+}
+
 h3 {
   font-weight: 400;
 }
@@ -379,6 +394,12 @@ a {
 
 .text-secondary {
   color: #76e7cdff;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }
 
 header {
