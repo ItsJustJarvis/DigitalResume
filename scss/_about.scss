@@ -6,7 +6,8 @@
     &__bio-image {
         height: 50vh;
         width: 100%;
-        background: $primary-dark;
+        /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
+        background: linear-gradient(0deg, rgba($primary-dark, 1) 25%, rgba($primary-light, 0.4)), url("../img/retrotech.jpg") fixed center;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -19,7 +20,7 @@
     }
 
     &__bio {
-        width: 80%;
+        width: 70%;
         text-align: center;
 
         .text-secondary {
