@@ -64,7 +64,8 @@
                 width: 100%;
                 border: none;
                 text-align: left;
-                font-size: 2rem;
+                font-family: "Lobster Two", cursive;
+                font-size: 1.5rem;
                 @include gradient-bottom;
 
                 &:hover {
