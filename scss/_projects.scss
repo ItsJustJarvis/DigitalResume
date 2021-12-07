@@ -18,4 +18,13 @@
             margin-bottom: 2rem;
         }
     }
+
+    &__bio {
+        width: 70%;
+        text-align: center;
+
+        .text-secondary {
+            padding-bottom: 1rem;
+        }
+    }
 }
