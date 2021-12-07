@@ -39,6 +39,19 @@ $accent-maroon: #b23368ff;
     justify-content: center;
 }
 
+@mixin about-section {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+@mixin item-card {
+    background: rgba($primary-light, 0.5);
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, $primary-light, $accent-maroon) 2;
+}
 /* Media Queries
 --------------------------------------------------------------------*/
 
