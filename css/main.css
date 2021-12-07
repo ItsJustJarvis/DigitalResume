@@ -202,7 +202,7 @@
 .about {
   padding-bottom: 2rem;
 }
-.about__bio-image {
+.about__bio-background {
   height: 50vh;
   width: 100%;
   /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
@@ -223,7 +223,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.about__bio-image p {
+.about__bio-background p {
   margin-bottom: 2rem;
 }
 .about__bio {
