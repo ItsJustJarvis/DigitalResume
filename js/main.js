@@ -1,3 +1,4 @@
+// Menu items
 const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
@@ -24,4 +25,27 @@ function toggleMenu() {
 
     showMenu = false;
   }
+}
+
+// Education card content - Collapsible solution based on above and some influence from https://www.w3schools.com/howto/howto_js_collapsible.asp
+const educationButtons = document.querySelectorAll('.education__item__toggle');
+
+let showItem = false;
+
+educationButtons.forEach(item => {
+    item.addEventListener('click', toggle)
+})
+
+function toggle(event){
+    let content = event.target.nextElementSibling;
+   
+    if(!showItem){
+        content.classList.add('open');
+        
+        showItem = true;
+    } else {
+        content.classList.remove('open');
+
+        showItem = false;
+    }
 }
