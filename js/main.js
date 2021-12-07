@@ -30,8 +30,6 @@ function toggleMenu() {
 // Education card content - Collapsible solution based on above and some influence from https://www.w3schools.com/howto/howto_js_collapsible.asp
 const educationButtons = document.querySelectorAll('.education__item__toggle');
 
-let showItem = false;
-
 educationButtons.forEach(item => {
     item.addEventListener('click', toggle)
 })
@@ -39,7 +37,7 @@ educationButtons.forEach(item => {
 function toggle(event){
     let content = event.target.nextElementSibling;
    
-    if(!showItem){
+    if(!content.classList.contains('open')){
         content.classList.add('open');
         
         showItem = true;
