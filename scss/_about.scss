@@ -28,7 +28,29 @@
         }
     }
 
-    .jobs,
+    .jobs {
+        @include about-section;
+
+        &__item {
+            @include item-card;
+
+            &__period {
+                background-color: rgba(black, 0.9);
+                padding: 1rem 1rem 0.5rem;
+                @include gradient-bottom;
+            }
+
+            &__details {
+                padding: 1rem;
+
+                h2,
+                h3 {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+
     .education {
         width: 60vw;
         margin: 2rem auto 0 auto;
