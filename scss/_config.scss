@@ -52,6 +52,12 @@ $accent-maroon: #b23368ff;
     border-bottom: 5px solid;
     border-image: linear-gradient(to right, $primary-light, $accent-maroon) 2;
 }
+
+@mixin gradient-bottom {
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, $accent-maroon, $primary-light) 2;
+}
+
 /* Media Queries
 --------------------------------------------------------------------*/
 
