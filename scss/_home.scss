@@ -14,7 +14,9 @@
         font-size: 5rem;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid $accent-turqoise;
+        text-shadow: 1px 2px $accent-maroon;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(to right, $accent-maroon, $primary-dark, $accent-turqoise) 2;
 
         &--last {
             color: $accent-turqoise;
