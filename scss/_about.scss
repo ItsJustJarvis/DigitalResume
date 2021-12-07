@@ -26,4 +26,27 @@
             padding-bottom: 1rem;
         }
     }
+
+    .jobs,
+    .education {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        &__item {
+            background: $primary-dark;
+            padding: 0.5rem;
+            border-bottom: 5px solid $accent-turqoise;
+
+            h2,
+            h3 {
+                margin: 0.5rem 0;
+            }
+            h6 {
+                margin: 0.3rem 0;
+            }
+        }
+    }
 }
