@@ -26,8 +26,12 @@ a {
     text-decoration: none;
 }
 
+.text-primary {
+    color: $primary-dark;
+}
+
 .text-secondary {
-    color: $secondary-color;
+    color: $accent-turqoise;
 }
 
 header {
@@ -40,6 +44,10 @@ header {
 main {
     height: 100%;
     width: 100%;
+
+    ul {
+        padding: 0.5rem 1rem;
+    }
 
     .social-icons {
         position: fixed;
