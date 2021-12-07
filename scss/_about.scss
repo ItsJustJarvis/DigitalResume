@@ -57,12 +57,34 @@
         &__item {
             @include item-card;
 
-            h2,
-            h3 {
-                margin: 0.5rem 0;
+            &__toggle {
+                background-color: rgba(black, 0.9);
+                cursor: pointer;
+                padding: 1.5rem;
+                width: 100%;
+                border: none;
+                text-align: left;
+                font-size: 2rem;
+                @include gradient-bottom;
+
+                &:hover {
+                    background-color: black;
+                }
             }
-            h6 {
-                margin: 0.3rem 0;
+
+            &__content {
+                display: none;
+                overflow: hidden;
+                padding: 1rem;
+                @include transition-ease;
+
+                &.open {
+                    display: block;
+                }
+
+                h3 {
+                    margin: 0.5rem 0;
+                }
             }
         }
     }
