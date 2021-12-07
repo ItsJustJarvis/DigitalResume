@@ -52,16 +52,10 @@
     }
 
     .education {
-        width: 60vw;
-        margin: 2rem auto 0 auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
+        @include about-section;
 
         &__item {
-            background: $primary-dark;
-            padding: 0.5rem;
-            border-bottom: 5px solid $accent-turqoise;
+            @include item-card;
 
             h2,
             h3 {
