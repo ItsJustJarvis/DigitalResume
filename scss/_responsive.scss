@@ -42,6 +42,11 @@
 }
 
 @include media-lg {
+    .projects {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
 
 @include media-xl {
