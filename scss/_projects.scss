@@ -40,12 +40,12 @@
             text-align: center;
 
             &__list {
-                @include flex-display(row, wrap, center, space-evenly);
+                @include flex-display(column, wrap, center, space-evenly);
                 list-style-type: none;
 
                 li {
                     @include flex-display(row, nowrap, center, space-between);
-                    width: 16%;
+                    width: 100%;
                     padding: 0.5rem 1rem;
                     border: solid;
                     @include gradient-bottom;
