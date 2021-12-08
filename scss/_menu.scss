@@ -68,7 +68,7 @@
     }
 
     .menu-nav {
-        @include flex-center(column, wrap);
+        @include flex-display(column, wrap, center, center);
         height: 100vh;
         overflow: hidden;
         background: $primary-dark;
@@ -82,7 +82,7 @@
         }
 
         &__item {
-            @include flex-center(column, wrap);
+            @include flex-display(column, wrap, center, center);
         }
 
         &__link {
