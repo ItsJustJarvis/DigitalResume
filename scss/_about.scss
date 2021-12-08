@@ -41,11 +41,12 @@
             }
 
             &__details {
+                @include flex-display(column, nowrap, left, space-evenly);
                 padding: 1rem;
 
-                h2,
-                h3 {
-                    margin: 1rem 0;
+                h3,
+                p {
+                    padding-bottom: 1rem;
                 }
             }
         }
