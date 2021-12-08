@@ -206,6 +206,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -214,7 +216,7 @@
           justify-content: flex-end;
 }
 .about__bio-background p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .about__bio {
   width: 70%;
@@ -239,18 +241,33 @@
 }
 .about .jobs__item__period {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 1rem 1rem 0.5rem;
+  padding: 1rem;
   border-bottom: 3px solid;
   -o-border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
      border-image: -webkit-gradient(linear, left top, right top, from(#b23368ff), to(#445393ff)) 2;
      border-image: linear-gradient(to right, #b23368ff, #445393ff) 2;
 }
 .about .jobs__item__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 1rem;
 }
-.about .jobs__item__details h2,
-.about .jobs__item__details h3 {
-  margin: 1rem 0;
+.about .jobs__item__details h3,
+.about .jobs__item__details p {
+  padding-bottom: 1rem;
 }
 .about .education {
   width: 60vw;
@@ -285,9 +302,8 @@
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   cursor: pointer;
-  padding: 1.5rem;
+  padding: 1rem;
   width: 100%;
-  border: none;
   text-align: left;
   font-size: 1.5rem;
   border-bottom: 3px solid;
@@ -614,6 +630,45 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 83, 147, 0.6)), color-stop(45%, #160610), to(rgba(68, 83, 147, 0.4))), url("../img/retrotech.jpg") fixed center;
+  background: linear-gradient(0deg, rgba(68, 83, 147, 0.6), #160610 45% 50%, rgba(68, 83, 147, 0.4)), url("../img/retrotech.jpg") fixed center;
+  background-size: cover;
+}
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
@@ -666,13 +721,17 @@
     width: 16%;
   }
 
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .headline {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .projects__items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 body {
