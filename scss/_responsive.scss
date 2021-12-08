@@ -34,20 +34,25 @@
         }
         &__items {
             grid-template-columns: repeat(2, 1fr);
+
+            &__btns {
+                position: absolute;
+                top: 0;
+                height: 100%;
+            }
+
+            &__btn {
+                opacity: 0;
+                bottom: 100%;
+            }
         }
         &__skills {
             grid-template-columns: repeat(2, 1fr);
-
-            &__legend {
-                &__list {
-                    flex-direction: row;
-
-                    li {
-                        width: 16%;
-                    }
-                }
-            }
         }
+    }
+
+    .contact__list {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .headline {
@@ -58,8 +63,20 @@
 @include media-lg {
     .projects {
         &__items {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
+
+        &__skills__legend__list {
+            flex-direction: row;
+
+            li {
+                width: 16%;
+            }
+        }
+    }
+
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
