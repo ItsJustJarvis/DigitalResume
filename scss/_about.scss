@@ -29,13 +29,13 @@
     }
 
     .jobs {
-        @include about-section;
+        @include page-section;
 
         &__item {
             @include item-card;
 
             &__period {
-                background-color: rgba(black, 0.9);
+                background-color: rgba(black, 0.8);
                 padding: 1rem 1rem 0.5rem;
                 @include gradient-bottom;
             }
@@ -52,19 +52,19 @@
     }
 
     .education {
-        @include about-section;
+        @include page-section;
 
         &__item {
             @include item-card;
 
             &__toggle {
-                background-color: rgba(black, 0.9);
+                background-color: rgba(black, 0.8);
+                color: $text-light;
                 cursor: pointer;
                 padding: 1.5rem;
                 width: 100%;
                 border: none;
                 text-align: left;
-                font-family: "Lobster Two", cursive;
                 font-size: 1.5rem;
                 @include gradient-bottom;
 
