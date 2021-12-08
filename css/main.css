@@ -170,8 +170,8 @@
           align-items: center;
   text-align: center;
   /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 83, 147, 0.6)), color-stop(#160610), to(rgba(68, 83, 147, 0.4))), url("../img/retrotech.jpg") fixed center;
-  background: linear-gradient(0deg, rgba(68, 83, 147, 0.6), #160610, rgba(68, 83, 147, 0.4)), url("../img/retrotech.jpg") fixed center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 83, 147, 0.6)), color-stop(rgba(45, 45, 82, 0.8)), color-stop(50vh, #160610), color-stop(rgba(45, 45, 82, 0.8)), to(rgba(68, 83, 147, 0.6))), url("../img/retrotech.jpg") fixed center;
+  background: linear-gradient(0deg, rgba(68, 83, 147, 0.6), rgba(45, 45, 82, 0.8), #160610 50vh, rgba(45, 45, 82, 0.8), rgba(68, 83, 147, 0.6)), url("../img/retrotech.jpg") fixed center;
   background-size: cover;
 }
 .home__name {
@@ -196,8 +196,8 @@
   height: 50vh;
   width: 100%;
   /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #160610), to(rgba(68, 83, 147, 0.4))), url("../img/retrotech.jpg") fixed center;
-  background: linear-gradient(0deg, #160610 25%, rgba(68, 83, 147, 0.4)), url("../img/retrotech.jpg") fixed center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #160610), to(rgba(68, 83, 147, 0.6))), url("../img/retrotech.jpg") fixed center;
+  background: linear-gradient(0deg, #160610 25%, rgba(68, 83, 147, 0.6)), url("../img/retrotech.jpg") fixed center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,8 +348,8 @@
   height: 50vh;
   width: 100%;
   /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #160610), to(rgba(68, 83, 147, 0.4))), url("../img/retrotech.jpg") fixed center;
-  background: linear-gradient(0deg, #160610 25%, rgba(68, 83, 147, 0.4)), url("../img/retrotech.jpg") fixed center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #160610), to(rgba(68, 83, 147, 0.6))), url("../img/retrotech.jpg") fixed center;
+  background: linear-gradient(0deg, #160610 25%, rgba(68, 83, 147, 0.6)), url("../img/retrotech.jpg") fixed center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,8 +650,8 @@
       -ms-flex-pack: initial;
           justify-content: initial;
   /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 83, 147, 0.6)), color-stop(45%, #160610), to(rgba(68, 83, 147, 0.4))), url("../img/retrotech.jpg") fixed center;
-  background: linear-gradient(0deg, rgba(68, 83, 147, 0.6), #160610 45% 50%, rgba(68, 83, 147, 0.4)), url("../img/retrotech.jpg") fixed center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(68, 83, 147, 0.6)), color-stop(rgba(45, 45, 82, 0.8)), color-stop(50vh, #160610), color-stop(rgba(45, 45, 82, 0.8)), to(rgba(68, 83, 147, 0.6))), url("../img/retrotech.jpg") fixed center;
+  background: linear-gradient(0deg, rgba(68, 83, 147, 0.6), rgba(45, 45, 82, 0.8), #160610 50vh, rgba(45, 45, 82, 0.8), rgba(68, 83, 147, 0.6)), url("../img/retrotech.jpg") fixed center;
   background-size: cover;
 }
 .contact h2 {
