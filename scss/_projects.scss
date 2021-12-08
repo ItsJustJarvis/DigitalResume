@@ -50,6 +50,26 @@
                     border: solid;
                     @include gradient-bottom;
 
+                    span {
+                        &.unkown {
+                            @include pill(#ff0000);
+                        }
+                        &.limited {
+                            @include pill(#ff5e00);
+                        }
+                        &.fair {
+                            @include pill(#ffc100);
+                        }
+                        &.decent {
+                            @include pill(#ffff00);
+                        }
+                        &.confident {
+                            @include pill(#9dff00);
+                        }
+                        &.fluent {
+                            @include pill(#63ff00);
+                        }
+                    }
                 }
             }
         }
@@ -67,6 +87,26 @@
                     padding: 0.5rem 1rem;
                     @include gradient-bottom;
 
+                    span {
+                        &.unkown {
+                            @include pill(#ff0000);
+                        }
+                        &.limited {
+                            @include pill(#ff5e00);
+                        }
+                        &.fair {
+                            @include pill(#ffc100);
+                        }
+                        &.decent {
+                            @include pill(#ffff00);
+                        }
+                        &.confident {
+                            @include pill(#9dff00);
+                        }
+                        &.fluent {
+                            @include pill(#63ff00);
+                        }
+                    }
                 }
             }
         }
