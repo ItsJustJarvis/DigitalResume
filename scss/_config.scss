@@ -45,8 +45,13 @@ $accent-maroon: #b23368ff;
     border-image: linear-gradient(to right, $accent-maroon, $primary-light) 2;
 }
 
-/* Media Queries
---------------------------------------------------------------------*/
+@mixin pill($background) {
+    font-weight: 700;
+    color: $text-dark;
+    background-color: $background;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
 
 @mixin media-md {
     @media screen and (min-width: 768px) {
