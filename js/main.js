@@ -35,7 +35,7 @@ educationButtons.forEach(item => {
 })
 
 function toggle(event){
-    let content = event.target.nextElementSibling;
+    let content = event.currentTarget.nextElementSibling;
    
     if(!content.classList.contains('open')){
         content.classList.add('open');

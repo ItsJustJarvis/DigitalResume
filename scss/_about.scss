@@ -58,6 +58,7 @@
             @include item-card;
 
             &__toggle {
+                @include flex-display(row, nowrap, center, space-between);
                 background-color: rgba(black, 0.8);
                 color: $text-light;
                 cursor: pointer;
