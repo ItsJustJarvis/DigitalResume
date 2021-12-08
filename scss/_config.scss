@@ -1,14 +1,8 @@
-/* Style resets
---------------------------------------------------------------------*/
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-/* Theme Styles
---------------------------------------------------------------------*/
 
 // Text
 $text-dark: #000;
@@ -21,25 +15,19 @@ $secondary-color: #75256aff;
 $accent-turqoise: #76e7cdff;
 $accent-maroon: #b23368ff;
 
-/* Functions
---------------------------------------------------------------------*/
-
-/* Mixins
---------------------------------------------------------------------*/
-
 @mixin transition-ease {
     transition: all 0.2s ease-in-out;
 }
 
-@mixin flex-center($direction, $wrap) {
+@mixin flex-display($direction, $wrap, $align, $justify) {
     display: flex;
     flex-direction: $direction;
     flex-wrap: $wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: $align;
+    justify-content: $justify;
 }
 
-@mixin about-section {
+@mixin page-section {
     width: 60vw;
     margin: 2rem auto 0 auto;
     display: grid;
