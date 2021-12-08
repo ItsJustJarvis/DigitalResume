@@ -29,11 +29,47 @@
     }
 
     &__items {
-        width: 60vw;
-        margin: 2rem auto 0 auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
+        @include page-section;
+    }
+
+    &__skills {
+        @include page-section;
+
+        &__legend {
+            grid-column: 1/-1;
+            text-align: center;
+
+            &__list {
+                @include flex-display(row, wrap, center, space-evenly);
+                list-style-type: none;
+
+                li {
+                    @include flex-display(row, nowrap, center, space-between);
+                    width: 16%;
+                    padding: 0.5rem 1rem;
+                    border: solid;
+                    @include gradient-bottom;
+
+                }
+            }
+        }
+
+        &__item {
+            text-align: center;
+
+            &__list {
+                @include flex-display(column, wrap, center, space-evenly);
+                list-style-type: none;
+
+                li {
+                    @include flex-display(row, nowrap, center, space-between);
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    @include gradient-bottom;
+
+                }
+            }
+        }
     }
 
     &__item {
