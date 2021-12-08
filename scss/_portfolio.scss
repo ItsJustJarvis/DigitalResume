@@ -9,23 +9,16 @@
         /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
         background: linear-gradient(0deg, rgba($primary-dark, 1) 25%, rgba($primary-light, 0.4)), url("../img/retrotech.jpg") fixed center;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
+        @include flex-display(column, wrap, center, flex-end);
 
         p {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
     }
 
     &__bio {
         width: 70%;
         text-align: center;
-
-        .text-secondary {
-            padding-bottom: 1rem;
-        }
     }
 
     &__items {
@@ -137,7 +130,7 @@
         &:hover {
             &::after {
                 top: 0;
-                opacity: 0.9;
+                opacity: 0.8;
             }
 
             .projects__btn {
@@ -148,8 +141,7 @@
 
     &__btns {
         position: absolute;
-        top: 0;
-        height: 100%;
+        bottom: 0;
         width: 100%;
         z-index: 1;
         display: grid;
@@ -159,7 +151,9 @@
     }
 
     &__btn {
-        opacity: 0;
+        opacity: 1;
+        background-color: black;
+        padding: 1rem;
         color: $text-light;
         @include transition-ease;
 
