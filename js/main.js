@@ -39,11 +39,7 @@ function toggle(event){
    
     if(!content.classList.contains('open')){
         content.classList.add('open');
-        
-        showItem = true;
     } else {
         content.classList.remove('open');
-
-        showItem = false;
     }
 }
