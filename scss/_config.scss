@@ -42,7 +42,7 @@ $accent-maroon: #b23368ff;
 
 @mixin gradient-bottom {
     border-bottom: 3px solid;
-    border-image: linear-gradient(to right, $accent-maroon, $primary-light) 2;
+    border-image: linear-gradient(to right, $accent-maroon, $accent-turqoise) 2;
 }
 
 @mixin pill($background) {
