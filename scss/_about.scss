@@ -35,25 +35,46 @@
         }
     }
 
-    .jobs {
+    &__skills {
         @include page-section;
 
-        &__item {
-            @include item-card;
+        .sub-headline {
+            text-align: center;
+            margin: 1rem 0;
+        }
 
-            &__period {
-                background-color: rgba(black, 0.8);
-                padding: 1rem;
-                @include gradient-bottom;
+        .pill {
+            @include pill;
+        }
+    
+        &__legend {
+            grid-column: 1/-1;
+    
+            &__list {
+                @include flex-display(column, wrap, center, space-evenly);
+                list-style-type: none;
+    
+                li {
+                    @include flex-display(row, nowrap, center, space-between);
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    border: solid;
+                    @include gradient-bottom;
+                }
             }
-
-            &__details {
-                @include flex-display(column, nowrap, left, space-evenly);
-                padding: 1rem;
-
-                h3,
-                p {
-                    padding-bottom: 1rem;
+        }
+    
+        &__item {
+    
+            &__list {
+                @include flex-display(column, wrap, center, space-evenly);
+                list-style-type: none;
+    
+                li {
+                    @include flex-display(row, nowrap, center, space-between);
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    @include gradient-bottom;
                 }
             }
         }

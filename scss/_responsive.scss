@@ -36,6 +36,10 @@
                 }
             }
         }
+        
+        &__skills {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     .projects {
         &__bio-image {
@@ -54,9 +58,6 @@
                 opacity: 0;
                 bottom: 100%;
             }
-        }
-        &__skills {
-            grid-template-columns: repeat(2, 1fr);
         }
     }
 
