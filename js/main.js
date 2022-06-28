@@ -42,4 +42,29 @@ function toggle(event){
     } else {
         content.classList.remove('open');
     }
+const skillPills = document.querySelectorAll('.pill');
+
+skillPills.forEach(item => {setPillColor(item)});
+
+function setPillColor(item) {
+        switch (item.textContent) {
+            case "0/5":
+                item.style.backgroundColor = "#ff0000";
+                break;
+            case "1/5":
+                item.style.backgroundColor = "#ff5e00";
+                break;
+            case "2/5":
+                item.style.backgroundColor = "#ffc100";
+                break;
+            case "3/5":
+                item.style.backgroundColor = "#ffff00";
+                break;
+            case "4/5":
+                item.style.backgroundColor = "#9dff00";
+                break;
+            case "5/5":
+                item.style.backgroundColor = "#63ff00";
+                break;
+        }
 }
