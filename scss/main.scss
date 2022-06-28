@@ -10,13 +10,14 @@ body {
     background: $primary-dark;
     color: $text-light;
     height: 100vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.15;
 }
 
 h1,
 h2 {
-    font-family: "Lobster Two", cursive;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 1px 1px $accent-maroon;
     font-weight: 400;
 }
 
