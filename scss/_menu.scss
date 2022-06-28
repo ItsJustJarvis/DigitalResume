@@ -71,9 +71,9 @@
         @include flex-display(column, wrap, center, center);
         height: 100vh;
         overflow: hidden;
+        padding-right: 1rem;
         background: $primary-dark;
         list-style-type: none;
-        padding-right: 1rem;
         transform: translateY(-100%);
         @include transition-ease;
 
@@ -87,10 +87,10 @@
 
         &__link {
             display: inline-block;
+            padding: 2rem 0;
             font-family: "Oswald", sans-serif;
             font-size: 2rem;
             text-transform: uppercase;
-            padding: 2rem 0;
             font-weight: 300;
             transform: translateX(110vw);
             @include transition-ease;
