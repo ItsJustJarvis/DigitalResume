@@ -29,10 +29,10 @@ $accent-maroon: #b23368ff;
 
 @mixin page-section {
     width: 60vw;
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 1rem auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    gap: 2rem;
 }
 
 @mixin item-card {
