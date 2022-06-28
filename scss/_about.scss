@@ -80,43 +80,50 @@
         }
     }
 
-    .education {
+    .jobs, .education {
         @include page-section;
 
         &__item {
             @include item-card;
 
-            &__toggle {
+            &__tab {
                 @include flex-display(row, nowrap, center, space-between);
-                background-color: rgba(black, 0.8);
-                color: $text-light;
-                cursor: pointer;
+                background-color: $text-dark;
+                border-radius: 1rem 1rem 0 0;
                 padding: 1rem;
-                width: 100%;
-                text-align: left;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
+                cursor: pointer;
+                box-shadow: 1px 1px 4px 1px $accent-turqoise; 
                 @include gradient-bottom;
+                @include prevent-select;
 
                 &:hover {
-                    background-color: black;
+                    background-color: $primary-dark;
+                }
+
+                &.open{
+                    .caret{
+                        transform: rotate(180deg);    
+                    }
+                }
+
+                .job-title{
+                    font-size: 1.25rem;
+                    vertical-align: center;
                 }
             }
 
-            &__content {
+            &__details {
                 display: none;
-                overflow: hidden;
-                padding: 1rem;
-                @include transition-ease;
 
                 &.open {
-                    display: block;
-                }
-
-                h3 {
-                    margin: 0.5rem 0;
+                    padding: 1rem;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    row-gap: 0.5rem;
                 }
             }
-        }
+        } 
     }
 
     .social-icons {
