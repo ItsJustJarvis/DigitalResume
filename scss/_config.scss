@@ -45,11 +45,10 @@ $accent-maroon: #b23368ff;
     border-image: linear-gradient(to right, $accent-maroon, $accent-turqoise) 2;
 }
 
-@mixin pill($background) {
+@mixin pill {
     font-weight: 700;
     color: $text-dark;
-    background-color: $background;
-    border-radius: 16px;
+    border-radius: 1rem;
     padding: 0.5rem;
 }
 
