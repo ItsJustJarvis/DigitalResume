@@ -9,11 +9,29 @@
     @include flex-display(column, wrap, center, flex-end);
 
     &__bio {
-        width: 70%;
-        text-align: center;
+        @include page-section;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
 
-        .text-secondary {
-            padding-bottom: 1rem;
+        &--heading{
+            grid-column: 1/-1;
+        }
+
+        &--image{
+            grid-column: 1/-1;
+            text-align: center;
+
+            img{
+                width: 100%;
+                border-radius: 3rem;
+            }
+        }
+
+        &--description{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
         }
     }
 
