@@ -28,20 +28,30 @@ function toggleMenu() {
 }
 
 // Education card content - Collapsible solution based on above and some influence from https://www.w3schools.com/howto/howto_js_collapsible.asp
-const educationButtons = document.querySelectorAll('.education__item__toggle');
+const educationButtons = document.querySelectorAll('.education__item__tab');
+const jobItems = document.querySelectorAll('.jobs__item__tab');
 
 educationButtons.forEach(item => {
     item.addEventListener('click', toggle)
-})
+});
+
+jobItems.forEach(item => {
+    item.addEventListener('click', toggle)
+});
 
 function toggle(event){
+    let tab = event.currentTarget;
     let content = event.currentTarget.nextElementSibling;
-   
+
     if(!content.classList.contains('open')){
+        tab.classList.add('open');
         content.classList.add('open');
     } else {
+        tab.classList.remove('open');
         content.classList.remove('open');
     }
+}
+
 const skillPills = document.querySelectorAll('.pill');
 
 skillPills.forEach(item => {setPillColor(item)});
