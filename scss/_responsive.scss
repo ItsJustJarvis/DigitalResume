@@ -41,6 +41,18 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    .education {
+        &__item{
+            &__details{
+                .course-list{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+
     .projects {
         &__bio-image {
             height: 40vh;
@@ -96,6 +108,12 @@
             li {
                 width: 16%;
             }
+        }
+    }
+
+    .projects {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
