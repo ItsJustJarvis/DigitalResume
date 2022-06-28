@@ -1,6 +1,7 @@
 @use "config" as *;
 
 .about {
+    padding: 6rem 0 2rem 0;
     /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
     background: linear-gradient(0deg, rgba($text-dark, 0.9) 33%, rgba($text-dark, 0.9) 66%, rgba($text-dark, 0.6)),
     url("../img/retrotech.jpg") fixed center;
