@@ -40,7 +40,6 @@
         &__skills {
             grid-template-columns: repeat(2, 1fr);
         }
-    }
 
         .jobs,
         .education {
@@ -52,7 +51,6 @@
                 }
             }
         }
-    }
 
         .education {
             &__item {
@@ -94,6 +92,10 @@
 
 @include media-lg {
 
+    .home{
+        padding-top: 40vh;
+    }
+
     .about {
 
         &__bio {
@@ -134,6 +136,7 @@
     }
 
     .contact {
+        padding-top: 40vh;
 
         &__list {
             grid-template-columns: repeat(3, 1fr);
