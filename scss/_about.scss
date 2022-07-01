@@ -31,7 +31,12 @@
         &--description{
             display: grid;
             grid-template-columns: 1fr;
-            row-gap: 1rem;
+            gap: 1rem;
+            padding: 0.5rem;
+
+            p{
+                padding: 0 0.5rem;
+            }
         }
     }
 
