@@ -112,9 +112,21 @@
                     }
                 }
 
-                .job-title{
-                    font-size: 1.25rem;
-                    vertical-align: center;
+                &--heading{
+                    @include flex-display(column, nowrap, initial, center);
+
+                    .period{
+                        padding-bottom: 0.5rem;
+                    }
+
+                    .role,
+                    .program,
+                    .location {
+                        font-size: 1.25rem;
+                        vertical-align: center;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                    }
                 }
             }
 
