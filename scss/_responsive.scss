@@ -42,33 +42,43 @@
         }
     }
 
-    .education {
-        &__item{
-            &__details{
-                .course-list{
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+        .jobs,
+        .education {
+            &__item {
+                &__tab {
+                    &--heading {
+                        @include flex-display(row, nowrap, center, center);
+                    }
                 }
             }
         }
     }
 
-    .projects {
-        &__bio-image {
-            height: 40vh;
+        .education {
+            &__item {
+                &__details {
+                    .course-list {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+            }
         }
+    }
+
+    .portfolio {
         &__items {
             grid-template-columns: repeat(2, 1fr);
 
-            &__btns {
+            &__buttons {
                 position: absolute;
                 top: 0;
                 height: 100%;
-            }
 
-            &__btn {
-                opacity: 0;
-                bottom: 100%;
+                >.btn {
+                    opacity: 0;
+                    bottom: 100%;
+                }
             }
         }
     }
@@ -111,15 +121,24 @@
         }
     }
 
-    .projects {
+    .portfolio {
         &__items {
             grid-template-columns: repeat(2, 1fr);
+
+            &__card{
+                &--overlay{
+                    overflow: hidden;
+                }
+            }
         }
     }
 
-    .contact__list {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .contact {
+
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    } 
 }
 
 @include media-xl {
