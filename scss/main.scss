@@ -28,6 +28,11 @@ h3 {
 a {
     color: $text-light;
     text-decoration: none;
+    word-break: break-word;
+
+    &:hover{
+        color: $accent-maroon;
+    }
 }
 
 header {
