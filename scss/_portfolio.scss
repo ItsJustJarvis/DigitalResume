@@ -1,85 +1,104 @@
 @use "config" as *;
 
-.projects {
-    padding-bottom: 2rem;
-
-    &__bio-background {
-        height: 50vh;
-        width: 100%;
-        /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
-        background: linear-gradient(0deg, rgba($primary-dark, 1) 25%, rgba($primary-light, 0.6)), url("../img/retrotech.jpg") fixed center;
-        background-size: cover;
-        @include flex-display(column, wrap, center, flex-end);
-
-        p {
-            margin-bottom: 1rem;
-        }
-    }
+.portfolio {
+    padding: 6rem 0 2rem 0;
+    /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
+    background: linear-gradient(0deg, rgba($text-dark, 0.9) 33%, rgba($text-dark, 0.9) 66%, rgba($text-dark, 0.6)),
+    url("../img/retrotech.jpg") fixed center;
+    background-size: cover;
+    @include flex-display(column, wrap, center, flex-end);
 
     &__bio {
-        width: 70%;
-        text-align: center;
+        @include page-section;
+        row-gap: 1rem;
+        align-items: center;
+        justify-items: center;
+
+        &--description {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0.5rem;
+}
     }
 
     &__items {
         @include page-section;
-    }
 
-    &__item {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        @include gradient-bottom;
-
-        img {
-            width: 100%;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: $primary-light;
-            opacity: 0;
-            @include transition-ease;
-        }
-
-        &:hover {
-            &::after {
-                top: 0;
-                opacity: 0.8;
+        &__card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem 1rem 0 0;
+            box-shadow: 1px 1px 4px 1px $accent-turqoise;
+            @include gradient-bottom;
+        
+            &--image {
+                width: 100%;
             }
 
-            .projects__btn {
-                opacity: 1;
+            &--buttons {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                z-index: 1;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                text-align: center;
+            
+                >.btn {
+                    background-color: black;
+                    color: $text-light;
+                    border-top: 1px solid $accent-turqoise;
+                    padding: 1rem;
+                    cursor: pointer;
+                    @include transition-ease;
+            
+                    &:first-of-type {
+                        border-right: 1px solid $accent-turqoise;
+                    }
+
+                    &:hover {
+                        color: $accent-maroon;
+                    }
+                }
+            }
+        
+            &--overlay {
+                @include flex-display(column, nowrap, flex-start, flex-start);
+                position: absolute;
+                overflow: scroll;
+                top: 100%;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
+                background: $primary-dark;
+                opacity: 0;
+                @include transition-ease;
+
+                >h2{
+                    padding-bottom: 1rem;
+                }
+
+                >p{
+                    padding-bottom: 1rem;
+
+                    &:last-of-type {
+                        padding-bottom: 4rem;
+                    }
+                }
+            }
+        
+            &:hover {
+                .portfolio__items__card--overlay {
+                    top: 0;
+                    opacity: 0.9;
+                }
             }
         }
-    }
-
-    &__btns {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        text-align: center;
-    }
-
-    &__btn {
-        opacity: 1;
-        background-color: black;
-        padding: 1rem;
-        color: $text-light;
-        @include transition-ease;
-
-        &:hover {
-            color: $secondary-color;
-        }
+        
+        
     }
 
     .social-icons {
