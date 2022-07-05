@@ -41,14 +41,13 @@
                 bottom: 0;
                 width: 100%;
                 z-index: 1;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                align-items: center;
-                text-align: center;
+                @include flex-display(row, nowrap, center, center);
             
                 >.btn {
+                    flex: 1 1 0;
                     background-color: black;
                     color: $text-light;
+                    text-align: center;
                     border-top: 1px solid $accent-turqoise;
                     padding: 1rem;
                     cursor: pointer;
