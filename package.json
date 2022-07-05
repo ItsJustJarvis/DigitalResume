@@ -1,0 +1,25 @@
+{
+  "name": "reevejarvis-portfolio",
+  "version": "1.0.0",
+  "description": "Digital resume and portfolio for Reeve Jarvis - Web Developer, Designer, and Programmer",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsJustJarvis/DigitalResume.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Reeve Jarvis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsJustJarvis/DigitalResume/issues"
+  },
+  "homepage": "https://github.com/ItsJustJarvis/DigitalResume#readme"
+}
