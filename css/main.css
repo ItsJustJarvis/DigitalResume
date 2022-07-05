@@ -73,7 +73,7 @@
   height: 100vh;
   overflow: hidden;
   padding-right: 1rem;
-  background: #160610ff;
+  background: #160610;
   list-style-type: none;
   transform: translateY(-100%);
   transition: all 0.2s ease-in-out;
@@ -102,10 +102,10 @@
   transform: translateX(0);
 }
 .nav .menu-nav__link.active {
-  color: #76e7cdff;
+  color: #76e7cd;
 }
 .nav .menu-nav__link:hover {
-  color: #b23368ff;
+  color: #b23368;
 }
 
 .menu-nav__link:nth-child(1) {
@@ -138,13 +138,13 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  text-shadow: 1px 2px #b23368ff;
+  text-shadow: 1px 2px #b23368;
   border-bottom: 4px solid;
-  -o-border-image: linear-gradient(to left, #b23368ff, #160610ff, #76e7cdff) 2;
-     border-image: linear-gradient(to left, #b23368ff, #160610ff, #76e7cdff) 2;
+  -o-border-image: linear-gradient(to left, #b23368, #160610, #76e7cd) 2;
+     border-image: linear-gradient(to left, #b23368, #160610, #76e7cd) 2;
 }
 .home__name--last {
-  color: #76e7cdff;
+  color: #76e7cd;
   font-weight: 700;
 }
 
@@ -227,8 +227,8 @@
   padding: 0.5rem 1rem;
   border: solid;
   border-bottom: 3px solid;
-  -o-border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
-     border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
+  -o-border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
+     border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
 }
 .about__skills__item__list {
   display: flex;
@@ -247,8 +247,8 @@
   width: 100%;
   padding: 0.5rem 1rem;
   border-bottom: 3px solid;
-  -o-border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
-     border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
+  -o-border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
+     border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
 }
 .about .jobs, .about .education {
   width: 65%;
@@ -272,17 +272,16 @@
   padding: 1rem;
   font-size: 1.25rem;
   cursor: pointer;
-  box-shadow: 1px 1px 4px 1px #76e7cdff;
+  box-shadow: 1px 1px 4px 1px #76e7cd;
   border-bottom: 3px solid;
-  -o-border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
-     border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
+  -o-border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
+     border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
   -webkit-user-select: none;
-  -ms-user-select: none;
   -moz-user-select: none;
        user-select: none;
 }
 .about .jobs__item__tab:hover, .about .education__item__tab:hover {
-  background-color: #160610ff;
+  background-color: #160610;
 }
 .about .jobs__item__tab.open .caret, .about .education__item__tab.open .caret {
   transform: rotate(180deg);
@@ -362,10 +361,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 1rem 1rem 0 0;
-  box-shadow: 1px 1px 4px 1px #76e7cdff;
+  box-shadow: 1px 1px 4px 1px #76e7cd;
   border-bottom: 3px solid;
-  -o-border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
-     border-image: linear-gradient(to right, #b23368ff, #76e7cdff) 2;
+  -o-border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
+     border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
 }
 .portfolio__items__card--image {
   width: 100%;
@@ -375,24 +374,27 @@
   bottom: 0;
   width: 100%;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 .portfolio__items__card--buttons > .btn {
+  flex: 1 1 0;
   background-color: black;
   color: #fff;
-  border-top: 1px solid #76e7cdff;
+  text-align: center;
+  border-top: 1px solid #76e7cd;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .portfolio__items__card--buttons > .btn:first-of-type {
-  border-right: 1px solid #76e7cdff;
+  border-right: 1px solid #76e7cd;
 }
 .portfolio__items__card--buttons > .btn:hover {
-  color: #b23368ff;
+  color: #b23368;
 }
 .portfolio__items__card--overlay {
   display: flex;
@@ -407,7 +409,7 @@
   height: 100%;
   width: 100%;
   padding: 1rem;
-  background: #160610ff;
+  background: #160610;
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -464,7 +466,6 @@
   .menu-btn {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
@@ -484,7 +485,6 @@
     font-size: 1.5rem;
     transform: translateX(0);
   }
-
   .about__bio--image img {
     width: 80%;
   }
@@ -503,7 +503,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-
   .portfolio__items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -516,11 +515,9 @@
     opacity: 0;
     bottom: 100%;
   }
-
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .headline {
     font-size: 3rem;
   }
@@ -529,7 +526,6 @@
   .home {
     padding-top: 40vh;
   }
-
   .about__bio {
     grid-template-columns: 1fr 2fr;
   }
@@ -548,14 +544,12 @@
   .about__skills__legend__list li {
     width: 16%;
   }
-
   .portfolio__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .portfolio__items__card--overlay {
     overflow: hidden;
   }
-
   .contact {
     padding-top: 40vh;
   }
@@ -574,7 +568,7 @@ body {
 h1,
 h2 {
   font-family: "Audiowide", cursive;
-  text-shadow: 1px 1px #b23368ff;
+  text-shadow: 1px 1px #b23368;
   font-weight: 400;
 }
 
@@ -588,7 +582,7 @@ a {
   word-break: break-word;
 }
 a:hover {
-  color: #b23368ff;
+  color: #b23368;
 }
 
 header {
@@ -615,7 +609,7 @@ main .social-icons a {
   transition: all 0.2s ease-in-out;
 }
 main .social-icons a:hover {
-  color: #b23368ff;
+  color: #b23368;
 }
 
 footer {
@@ -625,15 +619,15 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #76e7cdff;
+  color: #76e7cd;
 }
 
 .text-primary {
-  color: #160610ff;
+  color: #160610;
 }
 
 .text-secondary {
-  color: #76e7cdff;
+  color: #76e7cd;
 }
 
 .headline {
@@ -645,6 +639,6 @@ footer {
 .sub-headline {
   font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
-  text-shadow: 1px 1px #b23368ff;
+  text-shadow: 1px 1px #b23368;
 }
 /*# sourceMappingURL=main.css.map */
