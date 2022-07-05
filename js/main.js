@@ -27,7 +27,7 @@ function toggleMenu() {
   }
 }
 
-// Education card content - Collapsible solution based on above and some influence from https://www.w3schools.com/howto/howto_js_collapsible.asp
+// Education/Job card content - Collapsible solution based on above and some influence from https://www.w3schools.com/howto/howto_js_collapsible.asp
 const educationButtons = document.querySelectorAll('.education__item__tab');
 const jobItems = document.querySelectorAll('.jobs__item__tab');
 
@@ -53,7 +53,6 @@ function toggle(event){
 }
 
 const skillPills = document.querySelectorAll('.pill');
-
 skillPills.forEach(item => {setPillColor(item)});
 
 function setPillColor(item) {
