@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ItsJustJarvis/DigitalResume/issues"
   },
-  "homepage": "https://github.com/ItsJustJarvis/DigitalResume#readme"
+  "homepage": "https://github.com/ItsJustJarvis/DigitalResume#readme",
+  "devDependencies": {
+    "eslint": "^8.19.0"
+  }
 }
