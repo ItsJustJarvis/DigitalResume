@@ -457,7 +457,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), black 48vh, rgba(0, 0, 0, 0.5)), url("../img/retrotech.jpg") fixed center;
   background-size: cover;
 }
-.contact h2 {
+.contact h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
