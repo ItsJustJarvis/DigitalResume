@@ -1,5 +1,9 @@
 "use strict";
 
+/* eslint-disable no-unused-vars */
+import {initializeApp} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+
 // Menu items
 const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector(".menu-btn__burger");
@@ -79,3 +83,16 @@ function setPillColor(item) {
         break;
     }
 }
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDzCv1xdQ3k2DWyi_7E69fOhaCDe_z8WKk",
+    authDomain: "reevejarvis-portfolio.firebaseapp.com",
+    projectId: "reevejarvis-portfolio",
+    storageBucket: "reevejarvis-portfolio.appspot.com",
+    messagingSenderId: "78029059409",
+    appId: "1:78029059409:web:b8c5575fd99730e36d0f70",
+    measurementId: "G-0V0V8GLG5Y",
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
