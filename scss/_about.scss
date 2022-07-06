@@ -3,8 +3,7 @@
 .about {
     padding: 6rem 0 2rem 0;
     /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
-    background: linear-gradient(0deg, rgba($text-dark, 0.9) 33%, rgba($text-dark, 0.9) 66%, rgba($text-dark, 0.6)),
-    url("../img/retrotech.jpg") fixed center;
+    background: linear-gradient(0deg, rgba($text-dark, 0.9) 33%, rgba($text-dark, 0.9) 66%, rgba($text-dark, 0.6)), url("../img/retrotech.jpg") fixed center;
     background-size: cover;
     @include flex-display(column, wrap, center, flex-end);
 
@@ -14,27 +13,27 @@
         align-items: center;
         justify-items: center;
 
-        &--heading{
+        &--heading {
             grid-column: 1/-1;
         }
 
-        &--image{
+        &--image {
             grid-column: 1/-1;
             text-align: center;
 
-            img{
+            img {
                 width: 100%;
                 border-radius: 3rem;
             }
         }
 
-        &--description{
+        &--description {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
             padding: 0.5rem;
 
-            p{
+            p {
                 padding: 0 0.5rem;
             }
         }
@@ -51,14 +50,14 @@
         .pill {
             @include pill;
         }
-    
+
         &__legend {
             grid-column: 1/-1;
-    
+
             &__list {
                 @include flex-display(column, wrap, center, space-evenly);
                 list-style-type: none;
-    
+
                 li {
                     @include flex-display(row, nowrap, center, space-between);
                     width: 100%;
@@ -68,13 +67,12 @@
                 }
             }
         }
-    
+
         &__item {
-    
             &__list {
                 @include flex-display(column, wrap, center, space-evenly);
                 list-style-type: none;
-    
+
                 li {
                     @include flex-display(row, nowrap, center, space-between);
                     width: 100%;
@@ -85,7 +83,8 @@
         }
     }
 
-    .jobs, .education {
+    .jobs,
+    .education {
         @include page-section;
 
         &__item {
@@ -98,7 +97,7 @@
                 padding: 1rem;
                 font-size: 1.25rem;
                 cursor: pointer;
-                box-shadow: 1px 1px 4px 1px $accent-turqoise; 
+                box-shadow: 1px 1px 4px 1px $accent-turqoise;
                 @include gradient-bottom;
                 @include prevent-select;
 
@@ -106,16 +105,16 @@
                     background-color: $primary-dark;
                 }
 
-                &.open{
-                    .caret{
-                        transform: rotate(180deg);    
+                &.open {
+                    .caret {
+                        transform: rotate(180deg);
                     }
                 }
 
-                &--heading{
+                &--heading {
                     @include flex-display(column, nowrap, initial, center);
 
-                    .period{
+                    .period {
                         padding-bottom: 0.5rem;
                     }
 
@@ -140,7 +139,7 @@
                     row-gap: 0.5rem;
                 }
             }
-        } 
+        }
     }
 
     .social-icons {

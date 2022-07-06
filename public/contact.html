@@ -3,7 +3,7 @@
     <head>
         <!-- 
             Document Details:
-            Filename:       index.html
+            Filename:       contact.html
             Author:         Reeve Jarvis
             Latest-Update:  07/04/2022 
         -->
@@ -14,7 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&family=Oswald:wght@300&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./css/main.css" />
-        <title>Reeve Jarvis - Home</title>
+        <title>Reeve Jarvis - Contact</title>
     </head>
     <body>
         <header>
@@ -24,18 +24,31 @@
             <nav class="nav">
                 <ul class="menu-nav">
                     <li class="menu-nav__item">
-                        <a href="index.html" class="menu-nav__link active">Home</a>
+                        <a href="index.html" class="menu-nav__link">Home</a>
                         <a href="about.html" class="menu-nav__link">About Me</a>
                         <a href="portfolio.html" class="menu-nav__link">Portfolio</a>
-                        <a href="contact.html" class="menu-nav__link">Contact Me</a>
+                        <a href="contact.html" class="menu-nav__link active">Contact Me</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="home">
-                <h1 class="home__name">Reeve <span class="home__name--last">Jarvis</span></h1>
-                <h2 class="sub-headline">Web Developer, Designer & Programmer</h2>
+            <section class="contact">
+                <h2>Contact me...</h2>
+                <div class="contact__list">
+                    <div class="contact__email">
+                        <i class="fas fa-envelope"></i> Email
+                        <div class="text-secondary">itsjustjarvis@gmail.com</div>
+                    </div>
+                    <div class="contact__phone">
+                        <i class="fas fa-mobile-alt"></i> Phone
+                        <div class="text-secondary">+1 (289) 200-1057</div>
+                    </div>
+                    <div class="contact__address">
+                        <i class="fas fa-map-marker-alt"></i> Location
+                        <div class="text-secondary">Comox Valley, BC, Canada</div>
+                    </div>
+                </div>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/itsjustjarvis/" target="_blank">
                         <i class="fab fa-instagram fa-2x"></i>
@@ -50,7 +63,25 @@
                 <footer>&copy; Copyright 2022</footer>
             </section>
         </main>
+        <script type="module">
+
+            import {initializeApp} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+            import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyDzCv1xdQ3k2DWyi_7E69fOhaCDe_z8WKk",
+                authDomain: "reevejarvis-portfolio.firebaseapp.com",
+                projectId: "reevejarvis-portfolio",
+                storageBucket: "reevejarvis-portfolio.appspot.com",
+                messagingSenderId: "78029059409",
+                appId: "1:78029059409:web:b8c5575fd99730e36d0f70",
+                measurementId: "G-0V0V8GLG5Y",
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
         <script src="https://kit.fontawesome.com/89d4e3552d.js" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

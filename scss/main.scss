@@ -10,13 +10,13 @@ body {
     background-color: black;
     color: $text-light;
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.15;
 }
 
 h1,
 h2 {
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     text-shadow: 1px 1px $accent-maroon;
     font-weight: 400;
 }
@@ -30,7 +30,7 @@ a {
     text-decoration: none;
     word-break: break-word;
 
-    &:hover{
+    &:hover {
         color: $accent-maroon;
     }
 }

@@ -250,18 +250,21 @@
   -o-border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
      border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
 }
-.about .jobs, .about .education {
+.about .jobs,
+.about .education {
   width: 65%;
   margin: 2rem auto 1rem auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-.about .jobs__item, .about .education__item {
+.about .jobs__item,
+.about .education__item {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
 }
-.about .jobs__item__tab, .about .education__item__tab {
+.about .jobs__item__tab,
+.about .education__item__tab {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -280,25 +283,30 @@
   -moz-user-select: none;
        user-select: none;
 }
-.about .jobs__item__tab:hover, .about .education__item__tab:hover {
+.about .jobs__item__tab:hover,
+.about .education__item__tab:hover {
   background-color: #160610;
 }
-.about .jobs__item__tab.open .caret, .about .education__item__tab.open .caret {
+.about .jobs__item__tab.open .caret,
+.about .education__item__tab.open .caret {
   transform: rotate(180deg);
 }
-.about .jobs__item__tab--heading, .about .education__item__tab--heading {
+.about .jobs__item__tab--heading,
+.about .education__item__tab--heading {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: initial;
   justify-content: center;
 }
-.about .jobs__item__tab--heading .period, .about .education__item__tab--heading .period {
+.about .jobs__item__tab--heading .period,
+.about .education__item__tab--heading .period {
   padding-bottom: 0.5rem;
 }
 .about .jobs__item__tab--heading .role,
 .about .jobs__item__tab--heading .program,
-.about .jobs__item__tab--heading .location, .about .education__item__tab--heading .role,
+.about .jobs__item__tab--heading .location,
+.about .education__item__tab--heading .role,
 .about .education__item__tab--heading .program,
 .about .education__item__tab--heading .location {
   font-size: 1.25rem;
@@ -306,10 +314,12 @@
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
 }
-.about .jobs__item__details, .about .education__item__details {
+.about .jobs__item__details,
+.about .education__item__details {
   display: none;
 }
-.about .jobs__item__details.open, .about .education__item__details.open {
+.about .jobs__item__details.open,
+.about .education__item__details.open {
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
