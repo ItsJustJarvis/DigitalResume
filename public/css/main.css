@@ -569,9 +569,6 @@
   .about__skills__legend__list li {
     width: 16%;
   }
-  .portfolio__items {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .portfolio__items__card--tap {
     display: none;
   }
@@ -582,6 +579,11 @@
     padding-top: 40vh;
   }
   .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .portfolio__items {
     grid-template-columns: repeat(3, 1fr);
   }
 }
