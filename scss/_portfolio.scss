@@ -35,7 +35,6 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                z-index: 2;
                 width: 20%;
                 padding: 0.25rem;
                 color: $accent-maroon;
@@ -99,9 +98,14 @@
             }
 
             &:hover {
-                .portfolio__items__card--overlay {
-                    top: 0;
-                    opacity: 0.9;
+                .portfolio__items__card {
+                    &--tap {
+                        opacity: 0;
+                    }
+                    &--overlay {
+                        top: 0;
+                        opacity: 0.9;
+                    }
                 }
             }
         }
