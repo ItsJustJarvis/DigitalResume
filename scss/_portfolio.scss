@@ -31,6 +31,16 @@
             box-shadow: 1px 1px 4px 1px $accent-turqoise;
             @include gradient-bottom;
 
+            &--tap {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                width: 20%;
+                padding: 0.25rem;
+                color: $accent-maroon;
+            }
+
             &--image {
                 width: 100%;
             }

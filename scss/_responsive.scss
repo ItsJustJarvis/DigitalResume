@@ -36,7 +36,7 @@
                 }
             }
         }
-        
+
         &__skills {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -73,7 +73,7 @@
                 top: 0;
                 height: 100%;
 
-                >.btn {
+                > .btn {
                     opacity: 0;
                     bottom: 100%;
                 }
@@ -91,24 +91,22 @@
 }
 
 @include media-lg {
-
-    .home{
+    .home {
         padding-top: 40vh;
     }
 
     .about {
-
         &__bio {
             grid-template-columns: 1fr 2fr;
-    
+
             &--heading {
                 grid-column: 1/-1;
             }
-    
+
             &--image {
                 grid-column: 1/2;
             }
-    
+
             &--description {
                 grid-column: 2/-1;
             }
@@ -127,8 +125,11 @@
         &__items {
             grid-template-columns: repeat(3, 1fr);
 
-            &__card{
-                &--overlay{
+            &__card {
+                &--tap {
+                    display: none;
+                }
+                &--overlay {
                     overflow: hidden;
                 }
             }
@@ -141,7 +142,7 @@
         &__list {
             grid-template-columns: repeat(3, 1fr);
         }
-    } 
+    }
 }
 
 @include media-xl {
