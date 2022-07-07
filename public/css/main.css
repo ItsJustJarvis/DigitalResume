@@ -582,7 +582,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1650px) {
   .portfolio__items {
     grid-template-columns: repeat(3, 1fr);
   }
