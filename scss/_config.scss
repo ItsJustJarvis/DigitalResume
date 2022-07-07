@@ -52,7 +52,7 @@ $accent-maroon: #b23368ff;
     padding: 0.5rem;
 }
 
-@mixin prevent-select {   
+@mixin prevent-select {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -71,7 +71,7 @@ $accent-maroon: #b23368ff;
 }
 
 @mixin media-xl {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1650px) {
         @content;
     }
 }
