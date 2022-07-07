@@ -380,6 +380,15 @@
   -o-border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
      border-image: linear-gradient(to right, #b23368, #76e7cd) 2;
 }
+.portfolio__items__card--tap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 20%;
+  padding: 0.25rem;
+  color: #b23368;
+}
 .portfolio__items__card--image {
   width: 100%;
 }
@@ -560,6 +569,9 @@
   }
   .portfolio__items {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio__items__card--tap {
+    display: none;
   }
   .portfolio__items__card--overlay {
     overflow: hidden;
