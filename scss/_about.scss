@@ -41,6 +41,11 @@
 
     &__skills {
         @include page-section;
+        gap: 1rem;
+
+        > .headline {
+            grid-column: 1/-1;
+        }
 
         .sub-headline {
             text-align: center;
