@@ -123,8 +123,6 @@
 
     .portfolio {
         &__items {
-            grid-template-columns: repeat(3, 1fr);
-
             &__card {
                 &--tap {
                     display: none;
@@ -146,4 +144,9 @@
 }
 
 @include media-xl {
+    .portfolio {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
