@@ -44,17 +44,6 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .jobs,
-        .education {
-            &__item {
-                &__tab {
-                    &--heading {
-                        @include flex-display(row, nowrap, center, center);
-                    }
-                }
-            }
-        }
-
         .education {
             &__item {
                 &__details {
@@ -112,6 +101,17 @@
 
             &--description {
                 grid-column: 2/-1;
+            }
+        }
+
+        .jobs,
+        .education {
+            &__item {
+                &__tab {
+                    &--heading {
+                        @include flex-display(row, nowrap, center, center);
+                    }
+                }
             }
         }
 
