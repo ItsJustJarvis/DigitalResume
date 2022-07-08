@@ -43,41 +43,58 @@
         @include page-section;
         gap: 1rem;
 
-        > .headline {
+        &__heading {
             grid-column: 1/-1;
-        }
-
-        .sub-headline {
-            text-align: center;
-            margin: 1rem 0;
         }
 
         &__legend {
-            grid-column: 1/-1;
+            &__heading {
+                padding: 1rem;
+                text-align: center;
+            }
 
             &__list {
-                @include flex-display(column, wrap, center, space-evenly);
+                display: grid;
+                grid-template-columns: 1fr;
+                align-items: center;
+                justify-items: center;
                 list-style-type: none;
 
-                li {
+                &--li {
                     @include flex-display(row, nowrap, center, space-between);
-                    width: 100%;
-                    padding: 0.5rem 1rem;
-                    border: solid;
+                    width: 95%;
+                    margin: 0.5rem 0;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem 0.5rem 0 0;
+                    box-shadow: 1px 1px 4px 1px $accent-turqoise;
+                    background-color: black;
                     @include gradient-bottom;
                 }
             }
         }
 
         &__item {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 6fr;
+
+            &__heading {
+                padding: 1rem;
+                text-align: center;
+            }
+
             &__list {
-                @include flex-display(column, wrap, center, space-evenly);
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                align-items: center;
+                justify-items: center;
                 list-style-type: none;
 
-                li {
+                &--li {
                     @include flex-display(row, nowrap, center, space-between);
                     width: 100%;
-                    padding: 0.5rem 1rem;
+                    padding: 0.5rem;
                     @include gradient-bottom;
                 }
             }

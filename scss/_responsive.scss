@@ -42,6 +42,10 @@
 
         &__skills {
             grid-template-columns: repeat(2, 1fr);
+
+            &__legend {
+                grid-column: 1/-1;
+            }
         }
 
         .education {
@@ -96,6 +100,10 @@
             }
         }
 
+        &__skills__legend__list {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
         .jobs,
         .education {
             &__item {
@@ -104,15 +112,6 @@
                         @include flex-display(row, nowrap, center, center);
                     }
                 }
-            }
-        }
-
-        &__skills__legend__list {
-            flex-direction: row;
-
-            li {
-                width: 16%;
-                height: initial;
             }
         }
     }
