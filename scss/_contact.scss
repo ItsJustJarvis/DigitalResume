@@ -19,6 +19,10 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         font-size: 1.5rem;
+
+        a {
+            color: $accent-turqoise;
+        }
     }
 
     .social-icons {
