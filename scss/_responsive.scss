@@ -79,10 +79,6 @@
 }
 
 @include media-lg {
-    .home {
-        padding-top: 40vh;
-    }
-
     .about {
         &__bio {
             grid-template-columns: 1fr 2fr;
