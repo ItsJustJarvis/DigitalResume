@@ -81,7 +81,7 @@
 @include media-lg {
     .about {
         &__bio {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 3fr;
 
             &--heading {
                 grid-column: 1/-1;
