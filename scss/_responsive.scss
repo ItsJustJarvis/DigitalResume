@@ -1,6 +1,9 @@
 @use "config" as *;
 
 @include media-md {
+    .home {
+        padding-top: 40vh;
+    }
     .menu-btn {
         visibility: hidden;
     }
