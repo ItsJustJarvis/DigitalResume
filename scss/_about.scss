@@ -104,6 +104,8 @@
     .jobs,
     .education {
         @include page-section;
+        align-items: center;
+        justify-items: center;
 
         &__item {
             @include item-card;
