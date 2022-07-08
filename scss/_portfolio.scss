@@ -85,14 +85,14 @@
                 @include transition-ease;
 
                 > h2 {
-                    padding-bottom: 1rem;
+                    padding-bottom: 0.5rem;
                 }
 
                 > p {
-                    padding-bottom: 1rem;
+                    padding: 0 0 0.5rem 0.5rem;
 
                     &:last-of-type {
-                        padding-bottom: 4rem;
+                        padding-bottom: 5rem;
                     }
                 }
             }
