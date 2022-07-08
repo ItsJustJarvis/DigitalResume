@@ -94,3 +94,7 @@ footer {
     font-size: 1.5rem;
     font-family: "Oswald", sans-serif;
 }
+
+.pill {
+    @include pill;
+}

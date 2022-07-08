@@ -52,10 +52,6 @@
             margin: 1rem 0;
         }
 
-        .pill {
-            @include pill;
-        }
-
         &__legend {
             grid-column: 1/-1;
 
