@@ -455,6 +455,9 @@
 .portfolio__items__card--overlay > p:last-of-type {
   padding-bottom: 5rem;
 }
+.portfolio__items__card--overlay a {
+  color: #76e7cd;
+}
 .portfolio__items__card:hover .portfolio__items__card--tap {
   opacity: 0;
 }
@@ -493,6 +496,9 @@
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   font-size: 1.5rem;
+}
+.contact__list a {
+  color: #76e7cd;
 }
 .contact .social-icons {
   position: initial;
