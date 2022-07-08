@@ -31,7 +31,7 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
-            padding: 0.5rem;
+            padding-left: 0.5rem;
 
             p {
                 padding: 0 0.5rem;
@@ -114,7 +114,7 @@
                 @include flex-display(row, nowrap, center, space-between);
                 background-color: $text-dark;
                 border-radius: 1rem 1rem 0 0;
-                padding: 1rem;
+                padding: 0.75rem;
                 font-size: 1.25rem;
                 cursor: pointer;
                 box-shadow: 1px 1px 4px 1px $accent-turqoise;
@@ -151,6 +151,10 @@
 
             &__details {
                 display: none;
+
+                ul {
+                    padding-left: 2rem;
+                }
 
                 &.open {
                     padding: 1rem;
