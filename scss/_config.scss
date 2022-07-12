@@ -16,7 +16,7 @@ $accent-turqoise: #76e7cdff;
 $accent-maroon: #b23368ff;
 
 @mixin transition-ease {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 @mixin flex-display($direction, $wrap, $align, $justify) {
