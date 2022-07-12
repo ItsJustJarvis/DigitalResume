@@ -89,8 +89,14 @@
         overflow: hidden;
     }
     .about {
+        padding-top: 0;
         &__bio {
-            grid-template-columns: 1fr 3fr;
+            padding-top: 4rem;
+            margin: 0;
+            width: 60%;
+            min-height: 90vh;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 1rem;
 
             &--heading {
                 grid-column: 1/-1;
@@ -102,19 +108,52 @@
 
             &--description {
                 grid-column: 2/-1;
+                justify-self: start;
             }
         }
 
-        &__skills__legend__list {
-            grid-template-columns: repeat(6, 1fr);
+        &__skills {
+            min-height: 80vh;
+            padding: 1.25rem 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            &__legend__list {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            h2 {
+                align-self: flex-end;
+            }
         }
 
-        .jobs,
-        .education {
-            &__item {
-                &__tab {
-                    &--heading {
-                        @include flex-display(row, nowrap, center, center);
+        &__experience {
+            min-height: 80vh;
+            padding: 1.25rem 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            grid-template-rows: min-content max-content;
+
+            &:last-of-type {
+                height: 90vh;
+            }
+
+            h2 {
+                align-self: flex-end;
+            }
+
+            .jobs,
+            .education {
+                margin-bottom: 0;
+                &__item {
+                    &__tab {
+                        &--heading {
+                            @include flex-display(row, nowrap, center, center);
+                        }
+                    }
+                }
+            }
+        }
+
                     }
                 }
             }
