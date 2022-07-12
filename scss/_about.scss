@@ -181,6 +181,12 @@
         }
     }
 
+    .sectionjump {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
     .social-icons {
         display: flex;
         left: 0.5rem;
