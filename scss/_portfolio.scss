@@ -6,6 +6,7 @@
     background: linear-gradient(0deg, rgba($text-dark, 0.9) 33%, rgba($text-dark, 0.9) 66%, rgba($text-dark, 0.6)), url("../img/retrotech.jpg") fixed center;
     background-size: cover;
     @include flex-display(column, wrap, center, flex-end);
+    @include prevent-select;
 
     &__bio {
         @include page-section;
