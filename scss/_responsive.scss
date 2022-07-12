@@ -85,6 +85,9 @@
 }
 
 @include media-lg {
+    body.page-about {
+        overflow: hidden;
+    }
     .about {
         &__bio {
             grid-template-columns: 1fr 3fr;
