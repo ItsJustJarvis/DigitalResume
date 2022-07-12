@@ -28,7 +28,8 @@ $accent-maroon: #b23368ff;
 }
 
 @mixin page-section {
-    width: 65%;
+    width: 65vw;
+    max-width: 1200px;
     margin: 2rem auto 1rem auto;
     display: grid;
     grid-template-columns: 1fr;
