@@ -48,12 +48,14 @@
             }
         }
 
-        .education {
-            &__item {
-                &__details {
-                    .course-list {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
+        &__experience {
+            .education {
+                &__item {
+                    &__details {
+                        .course-list {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                        }
                     }
                 }
             }
