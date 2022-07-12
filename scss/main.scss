@@ -29,6 +29,7 @@ a {
     color: $text-light;
     text-decoration: none;
     word-break: break-word;
+    @include transition-ease;
 
     &:hover {
         color: $accent-maroon;
