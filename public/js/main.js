@@ -35,6 +35,10 @@ function init(){
         initializeAboutItems();   
         initilizeSectionJumps();     
     }
+
+    if(document.querySelector(".portfolio")){
+        initializePortfolioItems();
+    }
     initializeMenu();
 }
 
@@ -167,6 +171,32 @@ function initializeAboutItems(){
             break;
         }
     }
+}
+
+function initializePortfolioItems(){
+    const buttonsWrapper = document.querySelector(".carousel__map");
+    const slides = document.querySelector(".carousel__container__list");
+
+    buttonsWrapper.addEventListener("click", e => {
+        if (e.target.nodeName === "BUTTON") {
+            Array.from(buttonsWrapper.children).forEach(item =>
+                item.classList.remove("active")
+            );
+            if (e.target.classList.contains("first")) {
+                slides.style.transform = "translateX(-0%)";
+                e.target.classList.add("active");
+            } else if (e.target.classList.contains("second")) {
+                slides.style.transform = "translateX(-99%)";
+                e.target.classList.add("active");
+            } else if (e.target.classList.contains("third")){
+                slides.style.transform = "translatex(-199%)";
+                e.target.classList.add("active");
+            } else if (e.target.classList.contains("fourth")){
+                slides.style.transform = "translatex(-299%)";
+                e.target.classList.add("active");
+            }
+        }
+    });
 }
 
 const firebaseConfig = {
