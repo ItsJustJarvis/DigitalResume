@@ -91,12 +91,12 @@
     .about {
         padding-top: 0;
         &__bio {
-            padding-top: 4rem;
-            margin: 0;
-            width: 60%;
-            min-height: 90vh;
+            width: 1200px;
+            min-height: 100vh;
             grid-template-columns: 1fr 1.5fr;
-            gap: 1rem;
+            grid-template-rows: 90vh 10vh;
+            gap: 0;
+            margin: 0;
 
             &--heading {
                 grid-column: 1/-1;
@@ -108,46 +108,56 @@
 
             &--description {
                 grid-column: 2/-1;
-                justify-self: start;
+            }
+
+            .sectionjump {
+                grid-column: 1/-1;
             }
         }
 
         &__skills {
-            min-height: 80vh;
-            padding: 1.25rem 0;
+            width: 1200px;
+            min-height: 100vh;
             margin-top: 0;
             margin-bottom: 0;
+            grid-template-rows: 15vh 5vh 20vh 50vh 10vh;
+            gap: 0;
+
             &__legend__list {
                 grid-template-columns: repeat(6, 1fr);
             }
 
-            h2 {
-                align-self: flex-end;
+            .sectionjump {
+                grid-column: 1/-1;
             }
         }
 
         &__experience {
-            min-height: 80vh;
-            padding: 1.25rem 0;
-            margin-top: 0;
-            margin-bottom: 0;
-            grid-template-rows: min-content max-content;
+            width: 1200px;
+            min-height: 100vh;
+            margin: auto;
+            grid-template-rows: 15vh 7vh 68vh 10vh;
+            gap: 0;
 
-            &:last-of-type {
-                height: 90vh;
-            }
-
-            h2 {
-                align-self: flex-end;
+            &__heading {
+                padding-bottom: 1rem;
             }
 
             .jobs,
             .education {
+                align-self: flex-start;
                 margin-bottom: 0;
                 &__item {
                     &__tab {
                         &--heading {
                             @include flex-display(row, nowrap, center, center);
+
+                            .role,
+                            .program,
+                            .location,
+                            .period {
+                                padding-bottom: 0;
+                            }
                         }
                     }
                 }
@@ -156,13 +166,8 @@
 
         .sectionjump {
             @include flex-display(row, nowrap, center, center);
-            width: 65%;
-            height: 10vh;
+            width: 100%;
             @include transition-ease;
-
-            &:nth-of-type(even) {
-                padding-top: 4rem;
-            }
 
             &__rule {
                 flex: 1 1 auto;
@@ -187,7 +192,6 @@
 
                 span {
                     font-size: 2rem;
-                    // text-shadow: 1px 1px $accent-turqoise;
                 }
 
                 &:hover {
