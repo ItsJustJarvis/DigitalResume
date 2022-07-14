@@ -67,19 +67,8 @@
     }
 
     .portfolio {
-        &__items {
-            grid-template-columns: repeat(2, 1fr);
-
-            &__buttons {
-                position: absolute;
-                top: 0;
-                height: 100%;
-
-                > .btn {
-                    opacity: 0;
-                    bottom: 100%;
-                }
-            }
+        .carousel__container__list {
+            grid-template-rows: repeat(10, 725px);
         }
     }
 
@@ -210,14 +199,47 @@
     }
 
     .portfolio {
-        &__items {
-            &__card {
-                &--tap {
-                    display: none;
+        &__bio {
+            width: 1200px;
+            margin: 0 auto;
+            gap: 0;
+
+            &--heading {
+                padding-bottom: 1rem;
+            }
+        }
+        .carousel {
+            width: 1200px;
+            margin-top: 0;
+            margin-bottom: 0;
+            &__container {
+                overflow: hidden;
+
+                &__list {
+                    display: flex;
+                    padding: 1rem;
+
+                    &__card {
+                        width: 366px;
+                        height: 540px;
+
+                        img {
+                            width: 366px;
+                        }
+
+                        &:hover {
+                            .carousel__container__list__card__content {
+                                overflow: hidden;
+                            }
+                        }
+                        .tap {
+                            display: none;
+                        }
+                    }
                 }
-                &--overlay {
-                    overflow: hidden;
-                }
+            }
+            &__map {
+                display: initial;
             }
         }
     }
@@ -231,10 +253,3 @@
     }
 }
 
-@include media-xl {
-    .portfolio {
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-}
