@@ -46,6 +46,10 @@
             &__legend {
                 grid-column: 1/-1;
             }
+
+            &__item {
+                height: 100%;
+            }
         }
 
         &__experience {
