@@ -50,7 +50,6 @@ function initilizeSectionJumps(){
         let button = event.currentTarget;
         let location = button.innerText.toLowerCase().replace(/[^a-z0-9]/gi, "");
         let element = document.querySelector(`#${location}`);
-        console.log(element);
         swup.scrollTo(element);
     }
 }
@@ -124,6 +123,9 @@ function initializeAboutItems(){
 
         tab.classList.add("open");
         content.classList.add("open");
+        if(window.innerWidth < 1024){
+            swup.scrollTo(tab);
+        }
     }
 
     function toggleEducation(event){
@@ -147,6 +149,9 @@ function initializeAboutItems(){
 
         tab.classList.add("open");
         content.classList.add("open");
+        if(window.innerWidth < 1024){
+            swup.scrollTo(tab);
+        }
     }
 
     function setPillColor(item) {
