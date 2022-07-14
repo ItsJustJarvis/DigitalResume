@@ -12,8 +12,6 @@
     &__bio {
         @include page-section;
         row-gap: 1rem;
-        align-items: center;
-        justify-items: center;
 
         &--description {
             display: grid;
@@ -23,95 +21,188 @@
         }
     }
 
-    &__items {
+    .carousel {
         @include page-section;
+        gap: 1rem;
 
-        &__card {
-            position: relative;
+        &__container {
+            width: 100%;
             overflow: hidden;
-            border-radius: 1rem 1rem 0 0;
-            box-shadow: 1px 1px 4px 1px $accent-turqoise;
-            @include gradient-bottom;
 
-            &--tap {
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 20%;
-                padding: 0.25rem;
-                color: $accent-maroon;
-            }
-
-            &--image {
+            &__list {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(10, minmax(475px, 1fr));
+                align-items: center;
+                justify-items: center;
                 width: 100%;
-            }
+                height: 100%;
+                padding: 0.1rem;
+                gap: 2rem;
+                transition: all 1s ease-in-out;
 
-            &--buttons {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                z-index: 1;
-                @include flex-display(row, nowrap, center, center);
-
-                > .btn {
-                    flex: 1 1 0;
+                &__card {
+                    position: relative;
+                    border-radius: 1rem;
+                    box-shadow: 1px 1px 4px 1px $accent-turqoise;
                     background-color: black;
-                    color: $text-light;
-                    text-align: center;
-                    border-top: 1px solid $accent-turqoise;
-                    border-radius: 0.5rem 0.5rem 0 0;
-                    padding: 1rem;
-                    cursor: pointer;
-                    @include transition-ease;
+                    width: 100%;
+                    height: 100%;
 
-                    &:first-of-type {
-                        border-right: 1px solid $accent-turqoise;
+                    img {
+                        border-top-right-radius: inherit;
+                        border-top-left-radius: inherit;
+                        width: 100%;
+                    }
+
+                    &__content {
+                        @include gradient-bottom;
+                        @include transition-ease;
+                        border-bottom: 0;
+                        border-top: 3px solid;
+                        border-bottom-left-radius: inherit;
+                        border-bottom-right-radius: inherit;
+                        text-align: center;
+                        overflow: hidden;
+
+                        &__headings {
+                            @include transition-ease;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            align-items: center;
+                            justify-items: center;
+                            gap: 0.25rem;
+                            width: 100%;
+                            height: 100%;
+                            padding: 1rem 0.5rem;
+
+                            & > h1 {
+                                color: $accent-turqoise;
+                                font-size: 1.5rem;
+                            }
+
+                            & > h2 {
+                                color: darken($text-light, 10);
+                                font-family: "Oswald", sans-serif;
+                                font-size: 1rem;
+                                text-shadow: none;
+                            }
+                        }
+
+                        &__description {
+                            @include transition-ease;
+                            display: none;
+                            text-align: left;
+                            height: 0;
+                            opacity: 0;
+
+                            a {
+                                color: $accent-turqoise;
+
+                                &:hover {
+                                    color: $accent-maroon;
+                                }
+                            }
+                        }
+                    }
+
+                    &__buttons {
+                        @include flex-display(row, nowrap, center, center);
+                        width: 100%;
+                        border-radius: 0 0 1rem 1rem;
+                        position: absolute;
+                        bottom: 0;
+                        z-index: 1;
+
+                        .btn {
+                            flex: 1 1 0;
+                            background-color: black;
+                            color: $text-light;
+                            text-align: center;
+                            padding: 1rem;
+                            border-top: 1px solid $accent-turqoise;
+                            cursor: pointer;
+                            @include transition-ease;
+
+                            &:first-of-type {
+                                border-right: 1px solid $accent-turqoise;
+                                border-bottom-left-radius: 1rem;
+                            }
+
+                            &:last-of-type {
+                                border-bottom-right-radius: 1rem;
+                            }
+
+                            &:hover {
+                                color: $accent-maroon;
+                            }
+                        }
+                    }
+
+                    .tap {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 20%;
+                        padding: 0.25rem;
                     }
 
                     &:hover {
-                        color: $accent-maroon;
+                        .carousel__container__list__card {
+                            &__content {
+                                position: absolute;
+                                background-color: rgba(black, 0.9);
+                                top: 0;
+                                height: 100%;
+                                padding-top: 1rem;
+                                border: none;
+                                border-radius: 1rem;
+                                overflow: scroll;
+
+                                &__headings {
+                                    height: fit-content;
+                                    @include gradient-bottom;
+                                    border-bottom: 3px solid;
+                                }
+
+                                &__description {
+                                    height: fit-content;
+                                    display: grid;
+                                    grid-template-columns: 1fr;
+                                    gap: 0.5rem;
+                                    padding: 1rem 1rem 4rem;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .tap {
+                            opacity: 0;
+                        }
                     }
                 }
             }
+        }
 
-            &--overlay {
-                @include flex-display(column, nowrap, flex-start, flex-start);
-                position: absolute;
-                overflow: scroll;
-                top: 100%;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                padding: 1rem;
-                background: $primary-dark;
-                opacity: 0;
-                @include transition-ease;
+        &__map {
+            display: none;
+            button {
+                all: unset;
+                background: lighten($accent-turqoise, 10);
+                cursor: pointer;
+                margin: 0 0.125em;
+                position: relative;
+                user-select: none;
+                @include circle(1em);
 
-                > h2 {
-                    padding-bottom: 0.5rem;
-                }
-
-                > p {
-                    padding: 0 0 0.5rem 0.5rem;
-
-                    &:last-of-type {
-                        padding-bottom: 5rem;
-                    }
-                }
-
-                a {
-                    color: $accent-turqoise;
-                }
-            }
-
-            &:hover {
-                .portfolio__items__card {
-                    &--tap {
-                        opacity: 0;
-                    }
-                    &--overlay {
-                        top: 0;
-                        opacity: 0.9;
+                &.active {
+                    &:after {
+                        background: $accent-maroon;
+                        content: "";
+                        left: 50%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        @include circle(0.5em);
                     }
                 }
             }
