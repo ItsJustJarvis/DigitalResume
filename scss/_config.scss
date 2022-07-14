@@ -61,6 +61,12 @@ $accent-maroon: #b23368ff;
     user-select: none;
 }
 
+@mixin circle($i) {
+    border-radius: 100%;
+    height: $i;
+    width: $i;
+}
+
 @mixin media-md {
     @media screen and (min-width: 768px) {
         @content;
