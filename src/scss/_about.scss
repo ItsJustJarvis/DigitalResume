@@ -1,0 +1,204 @@
+@use "config" as *;
+
+.about {
+    padding: 6rem 0 2rem 0;
+    /* Background image collected on 10/01/2021 from Unsplash: https://unsplash.com/photos/p0j-mE6mGo4 Author: Lorenzo Herrera https://unsplash.com/@lorenzoherrera Published: February 21, 2019 */
+    background: linear-gradient(0deg, rgba($text-dark, 0.9) 33%, rgba($text-dark, 0.9) 66%, rgba($text-dark, 0.7)), url("../img/retrotech.jpg") fixed center;
+    background-size: cover;
+    @include flex-display(column, wrap, center, flex-end);
+    @include prevent-select;
+
+    &__bio {
+        @include page-section;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+
+        &--heading {
+            grid-column: 1/-1;
+        }
+
+        &--image {
+            grid-column: 1/-1;
+            text-align: center;
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+                box-shadow: 1px 1px 4px 1px $accent-turqoise;
+            }
+        }
+
+        &--description {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding-left: 0.5rem;
+
+            p {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    &__skills {
+        @include page-section;
+        grid-template-rows: repeat(2, min-content) max-content;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        &__heading {
+            grid-column: 1/-1;
+        }
+
+        &__legend {
+            width: 100%;
+            &__heading {
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+
+            &__list {
+                display: grid;
+                grid-template-columns: 1fr;
+                align-items: center;
+                justify-items: center;
+                list-style-type: none;
+
+                &--li {
+                    @include flex-display(row, nowrap, center, space-between);
+                    width: 95%;
+                    margin-bottom: 0.5rem;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem 0.5rem 0 0;
+                    box-shadow: 1px 1px 4px 1px $accent-turqoise;
+                    background-color: black;
+                    @include gradient-bottom;
+                }
+            }
+        }
+
+        &__item {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 6fr;
+
+            &__heading {
+                padding: 0.5rem;
+                text-align: center;
+            }
+
+            &__list {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                align-items: center;
+                justify-items: center;
+                list-style-type: none;
+
+                &--li {
+                    @include flex-display(row, nowrap, center, space-between);
+                    width: 100%;
+                    padding: 0.5rem;
+                    @include gradient-bottom;
+                }
+            }
+        }
+    }
+
+    &__experience {
+        @include page-section;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+
+        .jobs,
+        .education {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            width: 97%;
+            margin-bottom: 2rem;
+
+            &__item {
+                @include item-card;
+
+                &__tab {
+                    @include flex-display(row, nowrap, center, space-between);
+                    background-color: $text-dark;
+                    border-radius: 1rem 1rem 0 0;
+                    padding: 0.75rem;
+                    font-size: 1.25rem;
+                    box-shadow: 1px 1px 4px 1px $accent-turqoise;
+                    cursor: pointer;
+                    @include gradient-bottom;
+                    @include prevent-select;
+                    @include transition-ease;
+
+                    &:hover {
+                        background-color: rgba($primary-dark, 0.8);
+                    }
+
+                    &.open {
+                        .caret {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    &--heading {
+                        @include flex-display(column, nowrap, initial, center);
+
+                        h2 {
+                            padding-bottom: 0;
+                        }
+
+                        .period {
+                            padding-bottom: 0.5rem;
+                        }
+
+                        .role,
+                        .program,
+                        .location {
+                            font-size: 1.25rem;
+                            vertical-align: center;
+                            padding-bottom: 0.5rem;
+                            padding-left: 0.5rem;
+                        }
+                    }
+                }
+
+                &__details {
+                    display: none;
+
+                    ul {
+                        padding-left: 2rem;
+                    }
+
+                    &.open {
+                        padding: 1rem;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        row-gap: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionjump {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .social-icons {
+        display: flex;
+        left: 0.5rem;
+        flex-direction: column;
+    }
+
+    footer {
+        transform: rotate(90deg) translate(-3rem, -5rem);
+    }
+}

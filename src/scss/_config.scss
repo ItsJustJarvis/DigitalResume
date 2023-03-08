@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Text
+$text-dark: #000;
+$text-light: #fff;
+
+// Retro Gaming Color Palette
+$primary-dark: #160610ff;
+$primary-light: #445393ff;
+$secondary-color: #75256aff;
+$accent-turqoise: #76e7cdff;
+$accent-maroon: #b23368ff;
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin flex-display($direction, $wrap, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin page-section {
+    width: 65%;
+    margin: 2rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+@mixin item-card {
+    background: rgba(#fff, 0.2);
+    border-radius: 1rem;
+}
+
+@mixin gradient-bottom {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, $accent-maroon, $accent-turqoise) 2;
+}
+
+@mixin pill {
+    font-weight: 700;
+    color: $text-dark;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+@mixin prevent-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin circle($i) {
+    border-radius: 100%;
+    height: $i;
+    width: $i;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1650px) {
+        @content;
+    }
+}
